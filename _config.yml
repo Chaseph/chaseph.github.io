@@ -1,0 +1,16 @@
+safe:        true
+auto:        true
+server:      false
+server_port: 4000
+baseurl:    /
+url: //chaseph.github.com
+
+source:      .
+destination: ./_site
+
+future:      true
+lsi:         false
+pygments:    false
+markdown:    maruku
+permalink:   date
+paginate: 	 10
