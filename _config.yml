@@ -3,7 +3,7 @@ auto:        true
 server:      false
 server_port: 4000
 baseurl:    /
-url: //chaseph.github.com
+url: //chaseph.github.io
 
 source:      .
 destination: ./_site
