@@ -1,126 +1,57 @@
 * {
-	background: #FFFFFF;
-	border-color: #A5A5A5;
-	border-width: 0.1em;
-	line-height: 1.3em;
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	font-size: 1.125em;
-	line-height: 1.5;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-.block-centered {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.border-bottom {
-	border-bottom-style: solid;
-}
-
-.border-left {
-	border-left-style: solid;
-}
-
-.border-right {
-	border-right-style: solid;
-}
-
-.border-top {
-	border-top-style: solid;
-}
-
-.color-gray {
-	color: #333333;
-}
-
-.color-light-gray {
-	color: #666665;
-}
-
-.link-button {
-	display: inline;
-}
-
-.link-button img {
-	height: 32px;
-	width: 32px;
-}
-
-.text-centered {
-	text-align: center;
-}
-
-#content {
-	height: 100%;
-	margin-left: 30%;
-	padding-left: 5%;
-	position: relative;
-	width: 55%;
-	z-index: 1;
-}
-
-#left {
-	height: 100%;
-	line-height: 1;
+aside {
+	color: #FFF;
+	float: left;
+	font-family: amaranth, serif;
+	line-height: 2.1em;
+	padding: 3%;
 	position: fixed;
-	width: 30%;
+	width: 20%;
 }
 
-#left-intro-frame {
-	height: 45px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 98px;
+aside h1 {
+	font-size: 1.8em;
+	margin-top: 10%;
 }
 
-#left-intro-frame-portrait {
-	height: 0;
-	position: relative;
-	top: -50px;
-	width: 0;
+aside h1, p {
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
-#left-intro-frame-portrait img {
-	border-radius: 100%;
-	box-shadow: .02em .08em .05em 0 #A5A5A5;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	border: .225em solid white;
-	height: 90px;
-	width: 90px;
+body {
+	background: url(/assets/images/space.jpg) no-repeat center center fixed;
 }
 
-#left-intro-statement {
-	font-family: 'Sintony';
-	font-size: .8em;
-	margin-bottom: 3.5%;
-	margin-top: 3.5%;
+.body {
+	background: #FFFFFF;
+	float: right;
+	width: 74%;
 }
 
-#left-intro-title {
-	font-family: 'Chivo';
-	font-size: 1.75em;
-	line-height: 1;
-	margin-top: 3%;
+.content {
+
 }
 
-#left-links-frame {
-	margin-left: auto;
-	margin-right: auto;
-	width: 45%;
+.soft-green {
+	color: #99FF99;
 }
 
-#left-pic {
-	height: 73.125%;
-	width: 100%;
+@media screen and (max-width: 480px) {
+	aside {
+		float: none;
+		height: 50%;
+		position: relative;
+		width: 96%;
+	}
+
+	.body {
+		float: none;
+		height: 100%;
+		width: 100%;
+	}
 }
