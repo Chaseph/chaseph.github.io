@@ -3,17 +3,14 @@ date: date
 layout: default
 title: Home
 ---
-<div id="posts">
 	{% for post in paginator.posts %}
-	<div class="post-shell">
-		<div class="post">
+		<article>
 			<a href="{{ post.url }}">
 				<h1 class="title">{{ post.title }}</h1>
+				<span class="date">Posted {{ post.date | date: "%B %d" }}</span>
 			</a>
-
-			{{ post.content }}	
-		</div>
-	</div>
+			{{ post.content | truncatewords: 60 }}
+		</article>
 	{% endfor %}
 	{% if paginator.total_pages > 1 %}
 	<div id="page-bar">
