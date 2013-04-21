@@ -13,21 +13,15 @@ title: Home
 		</article>
 	{% endfor %}
 	{% if paginator.total_pages > 1 %}
-	<div id="page-bar">
 		{% if paginator.previous_page %}
-		<div id="page-bar-prev">
-			{% if paginator.previous_page == 1 %}
-			<a href="/">Prev</a>
-			{% else %}
-			<a href="/page{{ paginator.previous_page }}">Prev</a>
-			{% endif %}
-		</div>
+				{% if paginator.previous_page == 1 %}
+					<a class="page-bar-prev" href="/">&lt; Prev</a>
+				{% else %}
+					<a class="page-bar-prev" href="/page{{ paginator.previous_page }}">&lt; Prev</a>
+				{% endif %}
 		{% endif %}
 		{% if paginator.next_page %}
-		<div id="page-bar-next">
-			<a href="/page{{ paginator.next_page }}">Next</a>
-		</div>
+			<a class="page-bar-next" href="/page{{ paginator.next_page }}">Next &gt;</a>
 		{% endif %}
-	</div>
 	{% endif %}
 </div>
