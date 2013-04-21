@@ -44,17 +44,12 @@ article p {
 }
 
 aside {
-	/*color: #FFFFFF;*/
 	float: left;
 	font-family: amaranth, serif;
 	line-height: 1.5;
-	margin: 3%;
+	padding: 3%;
 	position: fixed;
 	width: 20%;
-}
-
-aside a {
-	/*color: #FFFFFF;*/
 }
 
 aside h1 {
@@ -63,12 +58,8 @@ aside h1 {
 }
 
 aside p {
-	padding-bottom: 1em;
-	padding-top: 1em;
-}
-
-body {
-	/*background: linear-gradient(to bottom right, #70B8FF, #C8E3FF) no-repeat fixed;*/
+	padding-bottom: 2em;
+	padding-top: 2em;
 }
 
 .content {
@@ -90,18 +81,19 @@ body {
 }
 
 .page-bar-next {
-	float: right;
+	display: inline-block;
+	text-align: right;
 }
 
 .page-bar-prev {
-	float: left;
+
 }
 
 .page-bar-next, .page-bar-prev {
 	color: #666666;
 	font-family: "adelle", sans-serif;
 	font-size: 1.5em;
-	margin-bottom: 4%;
+	padding-bottom: 4%;
 }
 
 .posts {
