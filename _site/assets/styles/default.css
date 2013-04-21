@@ -80,26 +80,22 @@ aside p {
 	margin-bottom: 2%;
 }
 
-.page-bar-next {
-	display: inline-block;
-	text-align: right;
-}
-
-.page-bar-prev {
-
-}
-
 .page-bar-next, .page-bar-prev {
 	color: #666666;
+	display: inline-block;
 	font-family: "adelle", sans-serif;
 	font-size: 1.5em;
-	padding-bottom: 4%;
+}
+
+.page-bar-next {
+	float: right;
 }
 
 .posts {
 	margin: 4%;
 	margin-right: 35%;
 	max-width: 650px;
+	overflow: auto;
 }
 
 .shares {
