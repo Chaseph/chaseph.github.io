@@ -13,11 +13,10 @@ a {
 }
 
 article {
+	border: 0.1em #DEDEDE;
 	border-bottom-style: solid;
-	border-color: #DEDEDE;
-	border-width: 0.1em;
 	color: #505050;
-	font-family: "Signika Negative", sans-serif;
+	font-family: "dejarip", "Signika Negative", sans-serif;
 	font-size: 1.1em;
 	font-weight: lighter;
 	line-height: 1.5;
@@ -26,16 +25,18 @@ article {
 }
 
 article h1, h2, h3, h4, h5, h6 {
-	color: #444;
-	display: inline;
+	color: #444444;
 	font-family: "adelle", sans-serif;
 	font-weight: 900;
 	line-height: 1.1;
+	margin-bottom: 3%;
+	margin-top: 1%;
 }
 
 article h1 {
 	font-family: "adelle", sans-serif;
 	font-size: 1.95em;
+	margin-top: 0%;
 }
 
 article p {
@@ -43,7 +44,7 @@ article p {
 }
 
 aside {
-	color: #FFFFFF;
+	/*color: #FFFFFF;*/
 	float: left;
 	font-family: amaranth, serif;
 	line-height: 2.1em;
@@ -53,7 +54,7 @@ aside {
 }
 
 aside a {
-	color: #FFFFFF;
+	/*color: #FFFFFF;*/
 }
 
 aside h1 {
@@ -67,11 +68,12 @@ aside p {
 }
 
 body {
-	background: url(/assets/images/space.jpg) fixed;
+	/*background: linear-gradient(to bottom right, #70B8FF, #C8E3FF) no-repeat fixed;*/
 }
 
 .content {
 	background: #FFFFFF;
+	box-shadow: -0.05em 0 0.7em;
 	float: right;
 	min-height: 100%;
 	width: 74%;
@@ -101,12 +103,30 @@ body {
 	margin-top: 3%;
 }
 
-.soft-green {
-	color: #99FF99;
+.social {
+	list-style: none;
+}
+
+.social li {
+	margin-bottom: 1%;
+}
+
+.social-logo {
+	height: 40px;
+	width: 40px;
+}
+
+.social-logo, .social-text {
+	vertical-align: middle;
+}
+
+.title {
+	display: inline;
 }
 
 @media screen and (max-width: 500px) {
 	aside {
+		text-align: center;
 		float: none;
 		padding: 5%;
 		position: relative;
@@ -122,5 +142,17 @@ body {
 
 	.posts {
 		margin-right: 4%;
+	}
+
+	.social {
+		margin-left: auto;
+		margin-right: auto;
+		width: 75%;
+	}
+
+	.social li {
+		display: inline-block;
+		margin-right: 2%;
+		text-align: center;
 	}
 }
