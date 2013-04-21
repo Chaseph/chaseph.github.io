@@ -133,6 +133,11 @@ aside p {
 }
 
 @media only screen and (max-width: 500px), only screen and (max-device-width: 480px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
 	aside {
 		text-align: center;
 		float: none;
@@ -149,7 +154,7 @@ aside p {
 	}
 
 	.posts {
-		margin-right: 4%;
+		/*margin-right: 4%;*/
 	}
 
 	.social {
