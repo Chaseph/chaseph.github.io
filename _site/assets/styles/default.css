@@ -92,6 +92,7 @@ aside p {
 }
 
 .posts {
+	box-shadow: 0 0.05em 0.7em;
 	margin: 4%;
 	margin-right: 35%;
 	max-width: 650px;
