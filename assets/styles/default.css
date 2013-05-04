@@ -51,7 +51,7 @@ article p {
 
 aside {
 	float: left;
-	font-family: amaranth, serif;
+	font-family: "Signika Negative", sans-serif;
 	height: 100%;
 	line-height: 1.5;
 	position: fixed;
@@ -74,7 +74,7 @@ aside p {
 }
 
 .aside-background {
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.9);
 	height: 100%;
 	padding: 10%;
 	padding-top: 26%;
@@ -106,6 +106,10 @@ aside p {
 	z-index: 0;
 }
 
+.my-name {
+	color: #f1c40f;
+}
+
 .page-bar-next, .page-bar-prev {
 	color: #666666;
 	display: inline-block;
@@ -133,11 +137,14 @@ aside p {
 
 .social {
 	list-style: none;
+	margin-left: -5%;
+	width: 110%;
+	/*text-align: left;*/
 }
 
 .social li {
 	display: inline-block;
-	margin: 0.5%;
+	padding: 0.5%;
 }
 
 .social-logo {
@@ -147,6 +154,11 @@ aside p {
 
 .social-logo, .social-text {
 	vertical-align: middle;
+}
+
+.social-text {
+	display: inline-block;
+	width: 61px;
 }
 
 .title {
@@ -164,6 +176,7 @@ aside p {
 		text-align: center;
 		float: none;
 		height: 29%;
+		min-height: 175px;
 		position: relative;
 		width: 100%;
 	}
