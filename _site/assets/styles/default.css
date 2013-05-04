@@ -139,17 +139,21 @@ aside p {
 	list-style: none;
 	margin-left: -5%;
 	width: 110%;
-	/*text-align: left;*/
 }
 
 .social li {
 	display: inline-block;
 	padding: 0.5%;
+	width: 80px;
+}
+
+.social li a {
+	height: 100%;
 }
 
 .social-logo {
-	height: 32px;
-	width: 32px;
+	height: 45px;
+	width: 45px;
 }
 
 .social-logo, .social-text {
@@ -158,6 +162,7 @@ aside p {
 
 .social-text {
 	display: inline-block;
+	margin: 2%;
 	width: 61px;
 }
 
@@ -176,7 +181,7 @@ aside p {
 		text-align: center;
 		float: none;
 		height: 29%;
-		min-height: 175px;
+		min-height: 215px;
 		position: relative;
 		width: 100%;
 	}
